@@ -44,13 +44,13 @@
         {
           "@type": "HowToStep",
           "name": "土の選定と準備",
-          "text": "粘土質の土を選び、5mm→1mm→茶こしの3段階でふるいにかける",
+          "text": "粘土質の土を選び、ふるいにかける",
           "position": 1
         },
         {
           "@type": "HowToStep",
           "name": "芯の制作",
-          "text": "土に水を加えて耳たぶくらいの硬さにし、均等な圧力で球形に成形",
+          "text": "土に水を加えて耳たぶくらいの硬さにし、球形に成形",
           "position": 2
         },
         {
@@ -68,7 +68,7 @@
         {
           "@type": "HowToStep",
           "name": "磨き上げ",
-          "text": "手のひら→ビニール袋→綿布→フリースの順で段階的に磨く",
+          "text": "段階的に磨いて光らせる。詳細は完全版で解説。",
           "position": 5
         }
       ]
@@ -92,7 +92,7 @@
           "name": "泥団子を光らせるにはどうする？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "茶こしレベルの超微細な粘土を表面に塗り重ね、手のひら→ビニール袋→綿布→フリースの順で段階的に磨きます。表面の凹凸を可視光の波長以下にすることで、宝石研磨と同じ原理で光ります。"
+            "text": "超微細な粘土を表面に塗り重ね、段階的に磨きます。表面の凹凸を可視光の波長以下にすることで、宝石研磨と同じ原理で光ります。"
           }
         },
         {
@@ -100,7 +100,7 @@
           "name": "どんな土が泥団子に向いている？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "粘土質の土（握って形が残るもの）が最適です。理想的な配合は粘土20-35%、シルト30-40%、細砂20-30%。校庭の土は砂が多いので、山の斜面や川沿いの粘土質の土を探しましょう。"
+            "text": "粘土質の土（握って形が残るもの）が最適です。理想的な配合は粘土20-35%、シルト30-40%、細砂20-30%。"
           }
         },
         {
@@ -108,7 +108,7 @@
           "name": "泥団子が割れるのはなぜ？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "乾燥速度の不均一が主な原因です。直射日光での急速乾燥はNG。ビニール袋で「寝かせ」を挟みながらゆっくり乾燥させることで、均一な収縮を促し割れを防げます。"
+            "text": "乾燥速度の不均一が主な原因です。直射日光での急速乾燥はNG。ビニール袋で寝かせを挟みながらゆっくり乾燥させることで割れを防げます。"
           }
         },
         {
@@ -124,7 +124,7 @@
           "name": "泥団子は自由研究に使える？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "泥団子は物理学（表面張力、締固め）、化学（粘土鉱物の結合）、地学（土壌の種類）を一度に学べる最高の自由研究テーマです。異なる土で比較実験をすると、優れたレポートになります。"
+            "text": "泥団子は物理学（表面張力、締固め）、化学（粘土鉱物の結合）、地学（土壌の種類）を一度に学べる最高の自由研究テーマです。"
           }
         }
       ]
@@ -368,54 +368,6 @@
         .card ul { font-size: 13px; padding-left: 18px; color: #555; }
         .card li { margin-bottom: 4px; }
 
-        /* Stat Bars */
-        .stat-bar-group { margin: 15px 0; }
-
-        .stat-bar-label {
-            display: flex;
-            justify-content: space-between;
-            font-size: 13px;
-            margin-bottom: 4px;
-        }
-
-        .stat-bar-track {
-            width: 100%;
-            height: 8px;
-            background: #ecf0f1;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .stat-bar-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 0.6s ease;
-        }
-
-        /* Tables */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-            font-size: 13px;
-        }
-
-        thead th {
-            background: var(--primary);
-            color: #fff;
-            padding: 10px 14px;
-            text-align: left;
-            font-weight: 600;
-        }
-
-        tbody td {
-            padding: 10px 14px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        tbody tr:hover { background: rgba(79,142,254,0.04); }
-        tbody tr:nth-child(even) { background: rgba(0,0,0,0.02); }
-
         /* Phases */
         .phase-grid {
             display: grid;
@@ -474,45 +426,6 @@
             margin-bottom: 4px;
         }
 
-        /* Comparison */
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 20px 0;
-        }
-
-        .comparison-box {
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            overflow: hidden;
-        }
-
-        .comparison-box .cb-header {
-            padding: 12px 20px;
-            font-weight: 700;
-            font-size: 14px;
-            color: #fff;
-        }
-
-        .comparison-box .cb-body {
-            padding: 16px 20px;
-        }
-
-        .comparison-box .cb-body ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .comparison-box .cb-body li {
-            padding: 6px 0;
-            font-size: 13px;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .comparison-box .cb-body li:last-child { border-bottom: none; }
-
         /* Tags */
         .tag {
             display: inline-block;
@@ -555,189 +468,6 @@
         .alert-fun {
             background: #ede9fe;
             border-left: 4px solid var(--accent2);
-        }
-
-        /* Timeline */
-        .timeline {
-            position: relative;
-            padding-left: 30px;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 10px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: var(--border);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 24px;
-            padding: 16px 20px;
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -25px;
-            top: 20px;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--accent2);
-            border: 2px solid #fff;
-        }
-
-        .timeline-item h4 { margin-top: 0; }
-        .timeline-item p { font-size: 13px; }
-
-        /* Bar chart */
-        .bar-chart {
-            display: flex;
-            align-items: flex-end;
-            gap: 12px;
-            height: 200px;
-            padding: 20px 0;
-            border-bottom: 2px solid var(--border);
-            margin: 20px 0;
-        }
-
-        .bar-col {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-            height: 100%;
-        }
-
-        .bar-value {
-            font-size: 11px;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 4px;
-        }
-
-        .bar-fill {
-            width: 80%;
-            max-width: 60px;
-            border-radius: 4px 4px 0 0;
-            transition: height 0.6s ease;
-        }
-
-        .bar-label {
-            font-size: 10px;
-            color: #666;
-            margin-top: 8px;
-            text-align: center;
-            word-break: keep-all;
-        }
-
-        /* Dorodango cross-section diagram */
-        .dorodango-diagram {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 30px 0;
-        }
-
-        .dorodango-sphere {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            position: relative;
-            background: radial-gradient(circle at 35% 35%, #d4a574 0%, #a0764a 30%, #7a5a3a 60%, #5a3a1a 100%);
-            box-shadow: 8px 8px 30px rgba(0,0,0,0.3), inset -4px -4px 20px rgba(0,0,0,0.2), inset 4px 4px 20px rgba(255,255,255,0.1);
-        }
-
-        .dorodango-layer {
-            position: absolute;
-            border-radius: 50%;
-            border: 2px dashed rgba(255,255,255,0.5);
-        }
-
-        .dorodango-label {
-            position: absolute;
-            font-size: 11px;
-            font-weight: 600;
-            color: var(--primary);
-            background: rgba(255,255,255,0.9);
-            padding: 2px 8px;
-            border-radius: 4px;
-            white-space: nowrap;
-        }
-
-        /* Mud type visualization */
-        .mud-particle-demo {
-            display: flex;
-            gap: 40px;
-            justify-content: center;
-            margin: 20px 0;
-            flex-wrap: wrap;
-        }
-
-        .particle-box {
-            text-align: center;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            min-width: 150px;
-        }
-
-        .particle-visual {
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 10px;
-        }
-
-        /* Step counter */
-        .step-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(135deg, var(--accent), var(--accent2));
-            color: #fff;
-            border-radius: 50%;
-            font-weight: 700;
-            font-size: 16px;
-            margin-right: 12px;
-            flex-shrink: 0;
-        }
-
-        .step-box {
-            display: flex;
-            align-items: flex-start;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            margin-bottom: 16px;
-        }
-
-        .step-box .step-content { flex: 1; }
-        .step-box .step-content h4 { margin-top: 2px; }
-        .step-box .step-content p { font-size: 13px; }
-
-        .step-time {
-            display: inline-block;
-            background: var(--earth-light);
-            color: var(--earth);
-            padding: 2px 10px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 600;
-            margin-left: 8px;
         }
 
         /* Fun fact callout */
@@ -785,6 +515,125 @@
         .formula .var { color: var(--accent); font-weight: 600; }
         .formula .comment { color: #64748b; font-style: italic; }
 
+        /* Step counter */
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: #fff;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 16px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .step-box {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 16px;
+        }
+
+        .step-box .step-content { flex: 1; }
+        .step-box .step-content h4 { margin-top: 2px; }
+        .step-box .step-content p { font-size: 13px; }
+
+        .step-time {
+            display: inline-block;
+            background: var(--earth-light);
+            color: var(--earth);
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            padding: 20px 48px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: #fff;
+            font-weight: 800;
+            font-size: 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(79,142,254,0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(79,142,254,0.5);
+        }
+
+        /* TOC list */
+        .toc-list {
+            list-style: none;
+            padding: 0;
+            max-width: 700px;
+        }
+
+        .toc-list li {
+            padding: 14px 20px;
+            margin-bottom: 8px;
+            background: #fff;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toc-list li .toc-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .toc-list li span.toc-desc {
+            font-size: 12px;
+            font-weight: 400;
+            color: #64748b;
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* Blur overlay for teaser */
+        .blur-teaser {
+            position: relative;
+            overflow: hidden;
+            max-height: 120px;
+        }
+
+        .blur-teaser::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: linear-gradient(transparent, var(--light));
+        }
+
         /* Print */
         @media print {
             nav { display: none; }
@@ -801,8 +650,7 @@
             .hero h1 { font-size: 24px; }
             .section { padding: 30px 20px; }
             .phase-grid { grid-template-columns: 1fr 1fr; }
-            .comparison-grid { grid-template-columns: 1fr; }
-            .bar-chart { height: 160px; }
+            .cta-button { font-size: 16px; padding: 16px 32px; }
         }
 
         /* Scroll animation */
@@ -828,27 +676,19 @@
 
     <div class="section-label">INTRO</div>
     <a href="#hook">つかみ</a>
-    <a href="#intro">はじめに</a>
 
     <div class="section-label">SCIENCE</div>
-    <a href="#physics">泥団子の科学：物理学</a>
-    <a href="#chemistry">泥団子の科学：化学</a>
-
-    <div class="section-label">TECHNIQUE</div>
-    <a href="#ceramics">陶芸技術</a>
-    <a href="#world">世界の類似技術</a>
+    <a href="#naruhodo1">なぜ丸くなる？</a>
+    <a href="#naruhodo2">なぜ光る？</a>
 
     <div class="section-label">PRACTICE</div>
     <a href="#kids">子供向け簡易版</a>
-    <a href="#method">光る泥だんごの作り方</a>
-    <a href="#mistakes">失敗と対策</a>
+    <a href="#contents">完全版の内容</a>
 
-    <div class="section-label">EXTRA</div>
-    <a href="#data">データ＆実験</a>
-    <a href="#psychology">発達心理学</a>
+    <div class="section-label">INFO</div>
+    <a href="#cta">完全版を読む</a>
     <a href="#faq">よくある質問</a>
     <a href="#related">関連記事</a>
-    <a href="#closing">おわりに</a>
 </nav>
 
 <!-- Main Content -->
@@ -883,1307 +723,199 @@
 </div>
 
 <!-- ============================================ -->
-<!-- Section 0: Introduction -->
+<!-- なるほど1: なぜ丸くなるのか -->
 <!-- ============================================ -->
-<div class="section" id="intro">
-    <h2 class="section-title">はじめに ── なぜ泥団子を本気で研究するのか</h2>
-    <p class="section-lead">「くだらないことほど本気で。」それがPokanoの信条です。</p>
+<div class="section" id="naruhodo1">
+    <h2 class="section-title">泥団子が丸くなる理由は、惑星と同じ原理</h2>
+    <p class="section-lead">たかが泥の球。されどその中にはニュートンも驚く物理法則が詰まっている。</p>
 
-    <p>泥団子。</p>
-    <p>誰もが子どもの頃に作った経験がある（あるいは、少なくとも見たことがある）この「土と水を丸めただけの球体」。一見するとあまりにもシンプルなこの遊びの中に、実は<strong>物理学、化学、材料科学、陶芸技術、そして人類の建築史</strong>が凝縮されていると言ったら、信じてもらえるだろうか。</p>
+    <h3>ラプラス圧 ── 宇宙と泥団子をつなぐ物理法則</h3>
 
-    <p>日本には「光る泥だんご（Hikaru Dorodango）」という、泥の球を鏡のように磨き上げる文化がある。京都教育大学の加用文男教授がこの現象を学術的に研究し、世界的に知られるようになった。ただの泥が、なぜ光るのか。なぜある土ではうまくいき、別の土ではダメなのか。</p>
+    <p>なぜ地球は丸いのか。そしてなぜ泥団子も丸くなるのか。答えは同じ ── <strong>「球は、同じ体積で表面積が最も小さくなる形」</strong>だからだ。</p>
 
-    <p>この記事では、AIの分析能力をフル活用して、<strong>泥団子を科学のあらゆる角度から徹底的に解剖</strong>する。読み終わる頃には、あなたは世界で最も理論武装した泥団子職人になっているはずだ。</p>
+    <p>物理学では、曲面の内外で圧力差が生じることを<strong>ラプラス圧</strong>と呼ぶ。地球は自らの重力で球形に潰れていく。泥団子では手の圧力と水の表面張力がその役割を果たす。</p>
+
+    <div class="formula">
+        <span class="var">&#916;P</span> = <span class="var">&#947;</span> (1/<span class="var">R&#8321;</span> + 1/<span class="var">R&#8322;</span>) <span class="comment">// ラプラスの式（曲面の内外圧力差）</span><br>
+        <span class="comment">// &#947; = 表面張力, R&#8321;, R&#8322; = 曲率半径</span>
+    </div>
+
+    <h3>表面張力と毛細管力 ── 水が粒子を「握る」</h3>
+
+    <p>泥団子が崩壊しないのは、<strong>毛細管力（capillary force）</strong>のおかげだ。土粒子と粒子の隙間に水が入り込むと、水の表面張力で粒子同士が引きつけ合う。これを「毛細管架橋」と呼ぶ。</p>
+
+    <p>水が多すぎても少なすぎてもダメ。最適な含水率は15〜25%。砂の城が湿った砂だけで作れるのと同じ原理だが、粘土は粒子が細かい分、もっと精密な制御が必要になる。</p>
+
+    <div class="fun-fact">
+        <p><strong>惑星と泥団子の共通点：</strong> 地球もかつては高温の「泥の球」だった。冷えて固まる過程で重力が球形に成形した。泥団子を作る子供は、小さなスケールで惑星形成を追体験しているのだ。</p>
+    </div>
 
     <div class="alert alert-fun">
-        <strong>この記事のスタンス：</strong> 真面目にふざける。学術的に正確な知識をベースにしつつ、「泥団子にここまでやるか」という過剰さを楽しんでいただきたい。
-    </div>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:linear-gradient(135deg, var(--accent), var(--accent2));">&#9881;</div>
-                <h4>分析に使用した学問領域</h4>
-            </div>
-            <ul>
-                <li>土質力学（Soil Mechanics）</li>
-                <li>粒子物理学（Granular Physics）</li>
-                <li>コロイド化学（Colloid Chemistry）</li>
-                <li>鉱物学（Mineralogy）</li>
-                <li>トライボロジー（Tribology）</li>
-                <li>陶芸科学（Ceramic Science）</li>
-                <li>発達心理学（Developmental Psychology）</li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:linear-gradient(135deg, var(--gold), #d97706);">&#9733;</div>
-                <h4>この記事で得られるもの</h4>
-            </div>
-            <ul>
-                <li>なぜ泥が固まるのかの完全理解</li>
-                <li>「最適な土」を選ぶ科学的基準</li>
-                <li>光る泥だんごの原理と作り方</li>
-                <li>世界5大陸の土の技術マップ</li>
-                <li>科学的に最強の泥団子レシピ</li>
-                <li>飲み会で使える泥団子トリビア</li>
-            </ul>
-        </div>
+        <strong>ここまでで気づいただろうか？</strong> まだ「作り方」は一切書いていない。なぜなら、原理を理解しないまま作っても「光る泥団子」にはならないからだ。科学を知った上で作ると、成功率が段違いに変わる。
     </div>
 </div>
 
 <!-- ============================================ -->
-<!-- Section 1: Physics -->
+<!-- なるほど2: なぜ光るのか -->
 <!-- ============================================ -->
-<div class="section" id="physics">
-    <h2 class="section-title">1. 泥団子の科学：物理学編</h2>
-    <p class="section-lead">ニュートンもびっくり。泥団子ひとつに、こんなにも物理法則が詰まっている。</p>
+<div class="section" id="naruhodo2" style="background:#fff;">
+    <h2 class="section-title">泥団子が光る理由は、宝石と同じ原理</h2>
+    <p class="section-lead">ダイヤモンドが光る理由と、泥団子が光る理由。実は科学的に同じだった。</p>
 
-    <h3>1.1 表面張力と毛細管力 ── 水が土をつなぐメカニズム</h3>
+    <h3>トライボロジー ── 「摩擦の科学」が泥を宝石に変える</h3>
 
-    <p>泥団子が崩壊しない最大の理由は、<strong>毛細管力（capillary force）</strong>にある。土粒子と土粒子の隙間に水が入り込むと、水の表面張力によって粒子同士が引きつけ合う。これは「毛細管架橋（capillary bridge）」と呼ばれる現象だ。</p>
+    <p>「トライボロジー（Tribology）」という学問がある。摩擦・摩耗・潤滑を研究する分野だ。自動車のエンジン開発やハードディスクの設計に使われるこの工学分野が、実は泥団子を光らせるカギを握っている。</p>
 
-    <div class="formula">
-        <span class="var">F</span> = 2<span class="var">π</span><span class="var">R</span><span class="var">γ</span> cos<span class="var">θ</span> <span class="comment">// 2粒子間の毛細管力（簡易モデル）</span><br>
-        <span class="comment">// R = 粒子半径, γ = 水の表面張力 (0.072 N/m), θ = 接触角</span>
-    </div>
+    <p>物体の表面が光るかどうかは、<strong>表面粗さ（Ra値）</strong>で決まる。光（可視光）の波長は380〜780ナノメートル。表面の凹凸がこの波長より小さくなると、光が乱反射せず正反射する ── つまり<strong>鏡のように光る</strong>。</p>
 
-    <p>重要なのは、水が「多すぎても少なすぎてもダメ」ということ。水が多すぎると粒子間に厚い水膜ができ、表面張力による引力が弱まる。少なすぎると毛細管架橋が形成されない。</p>
+    <ul class="principle-list">
+        <li>
+            <strong>ダイヤモンド研磨</strong>
+            ダイヤモンドは、ダイヤモンドの粉で磨くことで表面粗さを数ナノメートルまで下げる。光が正反射し、あの輝きが生まれる。
+        </li>
+        <li>
+            <strong>泥団子研磨</strong>
+            泥団子も、超微細な粘土粒子（2マイクロメートル以下）で表面を埋め、段階的に磨くことで粗さを下げていく。原理はダイヤモンド研磨と全く同じ。
+        </li>
+    </ul>
+
+    <h3>粒子サイズが全てを決める</h3>
+
+    <p>泥団子の輝きを左右するのは<strong>表面に使う土の粒子サイズ</strong>だ。粘土粒子は直径2マイクロメートル以下。これを表面に何層も塗り重ねると、凹凸が埋まり、光を反射する「殻」ができる。</p>
+
+    <p>陶芸の世界では、これと同じ原理を<strong>バニシング（burnishing）</strong>と呼ぶ。古代ローマの「テラ・シギラタ陶器」、日本の楽焼の素地磨き、アフリカの土器 ── 人類は何千年も前からこの科学を経験的に使ってきた。</p>
 
     <div class="fun-fact">
-        <p><strong>砂の城の科学：</strong> 砂の城も同じ原理で成り立つ。湿った砂は固まるのに、乾いた砂は崩れる。最適な水分量は砂の体積の約1〜2%。泥団子の場合、粘土粒子が細かいため最適含水率は15〜25%と高くなる。</p>
+        <p><strong>身近な例：</strong> 革靴を磨くと光るのも同じ原理。ワックスで表面の凹凸を埋め、布で擦って平滑にすることで正反射が起きる。泥団子、ダイヤモンド、革靴 ── 全部同じ「トライボロジー」で説明できる。</p>
     </div>
-
-    <h3>1.2 粒度分布（グラニュロメトリー）── 最強の配合比率</h3>
-
-    <p>泥団子の強度を決定づける最も重要な物理パラメータは<strong>粒度分布（particle size distribution）</strong>だ。土は大きさの異なる粒子の混合物であり、その配合バランスが全てを決める。</p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>粒子分類</th>
-                <th>サイズ</th>
-                <th>泥団子での役割</th>
-                <th>最適含有率</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>礫（Gravel）</strong></td>
-                <td>2mm以上</td>
-                <td>不要（除去すべき）</td>
-                <td>0%</td>
-            </tr>
-            <tr>
-                <td><strong>粗砂（Coarse Sand）</strong></td>
-                <td>0.5〜2mm</td>
-                <td>骨格構造の形成</td>
-                <td>5〜10%</td>
-            </tr>
-            <tr>
-                <td><strong>細砂（Fine Sand）</strong></td>
-                <td>0.075〜0.5mm</td>
-                <td>隙間充填・構造強化</td>
-                <td>20〜30%</td>
-            </tr>
-            <tr>
-                <td><strong>シルト（Silt）</strong></td>
-                <td>0.002〜0.075mm</td>
-                <td>表面平滑化・結合補助</td>
-                <td>30〜40%</td>
-            </tr>
-            <tr>
-                <td><strong>粘土（Clay）</strong></td>
-                <td>0.002mm未満</td>
-                <td>主要バインダー（接着剤）</td>
-                <td>20〜35%</td>
-            </tr>
-        </tbody>
-    </table>
 
     <div class="alert alert-info">
-        <strong>工学的知見：</strong> 土木工学の「最密充填理論」によれば、大小の粒子が適切に混合されることで空隙率が最小化される。泥団子に適用すると、<strong>シルト:粘土 = 6:4</strong> 程度の比率が空隙を最も効率的に埋め、高密度・高強度を実現する。
-    </div>
-
-    <h3>1.3 締固めの力学 ── 圧力が密度を変える</h3>
-
-    <p>手で握る動作は、土木工学でいう<strong>締固め（compaction）</strong>そのものだ。プロクター試験（Proctor test）として知られる土の締固め理論は、泥団子にも完全に当てはまる。</p>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#3b82f6;">&#8595;</div>
-                <h4>締固めの3つの効果</h4>
-            </div>
-            <ul>
-                <li><strong>空気の排出：</strong> 粒子間の空気を押し出し、密度を上げる</li>
-                <li><strong>粒子の再配列：</strong> 粒子がより安定した配置に移動する</li>
-                <li><strong>接触面積の増大：</strong> 粒子同士の接触点が増え、結合力が増す</li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#7c3aed;">&#9650;</div>
-                <h4>最適含水率の概念</h4>
-            </div>
-            <p>同じエネルギーで締め固めた場合、<strong>ある含水率で密度が最大</strong>になる。これを「最適含水率（OMC: Optimum Moisture Content）」と呼ぶ。泥団子の場合、概ね<strong>18〜22%</strong>が最適含水率の目安。触感でいうと「握ったとき指の間から水が染み出さないが、手を開いても崩れない」状態。</p>
-        </div>
-    </div>
-
-    <!-- Bar chart: Moisture vs Density -->
-    <h4>含水率と締固め密度の関係（プロクター曲線のイメージ）</h4>
-    <div class="bar-chart">
-        <div class="bar-col">
-            <div class="bar-value">1.20</div>
-            <div class="bar-fill" style="height:30%;background:linear-gradient(to top, #94a3b8, #cbd5e1);"></div>
-            <div class="bar-label">5%<br>(乾燥)</div>
-        </div>
-        <div class="bar-col">
-            <div class="bar-value">1.45</div>
-            <div class="bar-fill" style="height:50%;background:linear-gradient(to top, #60a5fa, #93c5fd);"></div>
-            <div class="bar-label">10%</div>
-        </div>
-        <div class="bar-col">
-            <div class="bar-value">1.65</div>
-            <div class="bar-fill" style="height:72%;background:linear-gradient(to top, #3b82f6, #60a5fa);"></div>
-            <div class="bar-label">15%</div>
-        </div>
-        <div class="bar-col">
-            <div class="bar-value">1.78</div>
-            <div class="bar-fill" style="height:90%;background:linear-gradient(to top, var(--accent2), var(--accent));"></div>
-            <div class="bar-label">20%<br><strong>(最適)</strong></div>
-        </div>
-        <div class="bar-col">
-            <div class="bar-value">1.72</div>
-            <div class="bar-fill" style="height:82%;background:linear-gradient(to top, #3b82f6, #60a5fa);"></div>
-            <div class="bar-label">25%</div>
-        </div>
-        <div class="bar-col">
-            <div class="bar-value">1.55</div>
-            <div class="bar-fill" style="height:58%;background:linear-gradient(to top, #60a5fa, #93c5fd);"></div>
-            <div class="bar-label">30%</div>
-        </div>
-        <div class="bar-col">
-            <div class="bar-value">1.35</div>
-            <div class="bar-fill" style="height:38%;background:linear-gradient(to top, #94a3b8, #cbd5e1);"></div>
-            <div class="bar-label">35%<br>(泥水)</div>
-        </div>
-    </div>
-    <p style="text-align:center;font-size:12px;color:#999;">縦軸：乾燥密度 (g/cm3) ── 含水率20%付近で密度がピークに達する</p>
-
-    <h3>1.4 球が最適な形状である理由</h3>
-
-    <p>なぜ泥団子は球形なのか。これには明確な物理的根拠がある。</p>
-
-    <ul class="principle-list">
-        <li>
-            <strong>最小表面積：</strong>
-            同じ体積の立体の中で、球は表面積が最も小さい。これは乾燥時の水分蒸発を最小化し、均一な収縮を可能にする。立方体の表面積は同体積の球の約1.24倍。
-        </li>
-        <li>
-            <strong>均一な応力分布：</strong>
-            球形は外部からの力を全方向に均等に分散する。角があると応力集中が起こり、そこからひび割れが発生する。球には角がないため、最も壊れにくい形状である。
-        </li>
-        <li>
-            <strong>等方的な乾燥収縮：</strong>
-            球形の泥団子は全方向から均等に乾燥する。非対称な形状では乾燥速度の違いから内部応力が生じ、ひび割れの原因になる。
-        </li>
-        <li>
-            <strong>回転対称性によるポリッシング効率：</strong>
-            球面はどの方向に回転させても同じ曲率を持つため、手のひらで回しながら均一に磨くことができる。
-        </li>
-    </ul>
-
-    <h3>1.5 トライボロジー ── 磨きの物理学</h3>
-
-    <p>泥団子が光る現象は<strong>トライボロジー（摩擦・摩耗・潤滑の科学）</strong>で説明できる。表面の微小な凹凸が摩擦によって平坦化されていくプロセスだ。</p>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#f59e0b;">1</div>
-                <h4>粗面の段階 (Ra > 10μm)</h4>
-            </div>
-            <p>表面粗さが大きく、光を乱反射する。見た目はマットで白っぽい。粒子の突起が多数存在し、手のひらでこすると粒子が移動する。</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#f59e0b;">2</div>
-                <h4>平滑化段階 (Ra = 1〜10μm)</h4>
-            </div>
-            <p>突起の頂点が削られ、凹部が埋まっていく。可視光の波長（380〜780nm）よりまだ凹凸が大きいため、完全な鏡面にはならないが、ぼんやりとした光沢が出始める。</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#f59e0b;">3</div>
-                <h4>鏡面段階 (Ra < 1μm)</h4>
-            </div>
-            <p>表面粗さが可視光波長以下になると、光が正反射（鏡面反射）するようになる。これが「光る泥だんご」の正体。粘土粒子のサイズ（2μm未満）が鍵を握る。</p>
-        </div>
-    </div>
-
-    <div class="formula">
-        <span class="comment">// 反射率と表面粗さの関係（Beckmann-Kirchhoff理論）</span><br>
-        <span class="var">R</span>/<span class="var">R0</span> = exp(-(<span class="var">4π</span><span class="var">σ</span> cos<span class="var">θ</span> / <span class="var">λ</span>)<sup>2</sup>)<br>
-        <span class="comment">// σ = 表面粗さRMS, λ = 光の波長, θ = 入射角</span><br>
-        <span class="comment">// σ < λ/4π ≈ 30nm で高い鏡面反射率を達成</span>
-    </div>
-
-    <div class="fun-fact">
-        <p><strong>つまり：</strong> 泥団子を「光らせる」とは、物理的に言えば「表面の粒子を可視光の波長より小さい凹凸にまで平坦化する」ということ。人間の手のひらという天然のポリッシャーで、ナノスケールの表面加工をしていることになる。考えてみれば、すごい話だ。</p>
+        <strong>では具体的に、どの布で、どの順番で、何分磨けばいいのか？</strong> その「科学的に最適化された磨き方」は完全版で詳しく解説しています。
     </div>
 </div>
 
 <!-- ============================================ -->
-<!-- Section 2: Chemistry -->
+<!-- 子供向け簡易版 -->
 <!-- ============================================ -->
-<div class="section" id="chemistry">
-    <h2 class="section-title">2. 泥団子の科学：化学編</h2>
-    <p class="section-lead">なぜ粘土は「接着剤」になるのか。分子レベルで解き明かす。</p>
-
-    <h3>2.1 粘土鉱物の正体 ── 3種の主要プレイヤー</h3>
-
-    <p>泥団子の結合力の大部分は<strong>粘土鉱物（clay minerals）</strong>に依存している。粘土鉱物は層状ケイ酸塩鉱物の一群であり、その薄い板状の結晶構造が独特の性質を生み出す。</p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>粘土鉱物</th>
-                <th>化学式</th>
-                <th>層構造</th>
-                <th>膨潤性</th>
-                <th>泥団子適性</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>カオリナイト</strong><br>(Kaolinite)</td>
-                <td>Al<sub>2</sub>Si<sub>2</sub>O<sub>5</sub>(OH)<sub>4</sub></td>
-                <td>1:1型<br>（テトラ+オクタ）</td>
-                <td>低い<br>(非膨潤性)</td>
-                <td><span class="tag tag-green">最適</span><br>安定・成形しやすい</td>
-            </tr>
-            <tr>
-                <td><strong>イライト</strong><br>(Illite)</td>
-                <td>K<sub>x</sub>Al<sub>2</sub>(Si<sub>4-x</sub>Al<sub>x</sub>)O<sub>10</sub>(OH)<sub>2</sub></td>
-                <td>2:1型<br>（テトラ+オクタ+テトラ）</td>
-                <td>中程度</td>
-                <td><span class="tag tag-blue">良好</span><br>適度な可塑性</td>
-            </tr>
-            <tr>
-                <td><strong>モンモリロナイト</strong><br>(Montmorillonite)</td>
-                <td>(Na,Ca)(Al,Mg)<sub>2</sub>Si<sub>4</sub>O<sub>10</sub>(OH)<sub>2</sub>・nH<sub>2</sub>O</td>
-                <td>2:1型<br>（層間に水分子）</td>
-                <td>非常に高い<br>(膨潤性)</td>
-                <td><span class="tag tag-gold">注意</span><br>乾燥時にひび割れやすい</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>2.2 粘土が結合する化学的メカニズム</h3>
-
-    <p>粘土粒子が互いにくっつくのは、複数の分子間力の複合的な作用による。</p>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#3b82f6;">H</div>
-                <h4>水素結合</h4>
-            </div>
-            <p>粘土表面のOH基と隣接する粘土のO原子の間に形成される。結合エネルギーは約10〜40 kJ/mol。粘土層間の主要な結合力であり、乾燥時に特に強くなる。</p>
-            <p><span class="tag tag-blue">結合力: 中</span></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#7c3aed;">V</div>
-                <h4>ファンデルワールス力</h4>
-            </div>
-            <p>粘土の板状結晶は表面積が非常に大きいため（比表面積: 10〜800 m<sup>2</sup>/g）、弱いファンデルワールス力でも合計すると巨大な結合力になる。面と面が近いほど強い。</p>
-            <p><span class="tag tag-purple">結合力: 面積依存</span></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#10b981;">+−</div>
-                <h4>静電的引力</h4>
-            </div>
-            <p>粘土粒子の面（負電荷）と端（正電荷）の間の静電引力。「カードハウス構造」と呼ばれる粒子配列を形成し、土の構造強度を生み出す。</p>
-            <p><span class="tag tag-green">結合力: 高（pH依存）</span></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#f59e0b;">Ca</div>
-                <h4>カチオン架橋</h4>
-            </div>
-            <p>Ca<sup>2+</sup>やAl<sup>3+</sup>などの多価陽イオンが、負に帯電した粘土面同士を橋渡しする。石灰質の土が特に固まりやすいのはこのため。</p>
-            <p><span class="tag tag-gold">結合力: 高</span></p>
-        </div>
-    </div>
-
-    <h3>2.3 土壌pHと泥団子の関係</h3>
-
-    <p>土のpHは粘土粒子の表面電荷を変化させ、粒子間の相互作用に大きく影響する。</p>
-
-    <div class="comparison-grid">
-        <div class="comparison-box">
-            <div class="cb-header" style="background:linear-gradient(135deg, #ef4444, #dc2626);">酸性土壌 (pH 4〜5.5)</div>
-            <div class="cb-body">
-                <ul>
-                    <li>粘土端面が正電荷になりやすい</li>
-                    <li>面-端結合（カードハウス）が発達</li>
-                    <li>凝集しやすく、成形しやすい</li>
-                    <li>日本の関東ローム（火山灰土）はこの範囲</li>
-                    <li><strong>泥団子適性: やや良好</strong></li>
-                </ul>
-            </div>
-        </div>
-        <div class="comparison-box">
-            <div class="cb-header" style="background:linear-gradient(135deg, #3b82f6, #2563eb);">中性〜弱アルカリ (pH 6.5〜8)</div>
-            <div class="cb-body">
-                <ul>
-                    <li>カチオン架橋が効率的に機能</li>
-                    <li>Ca<sup>2+</sup>が粘土を強く結合させる</li>
-                    <li>最も安定した構造を形成</li>
-                    <li>石灰岩地帯の土壌が該当</li>
-                    <li><strong>泥団子適性: 最適</strong></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <h3>2.4 有機物の役割</h3>
-
-    <p>土壌中の有機物（腐植）は泥団子にとって<strong>プラスとマイナスの両面</strong>を持つ。</p>
-
-    <div class="comparison-grid">
-        <div class="comparison-box">
-            <div class="cb-header" style="background:#10b981;">メリット</div>
-            <div class="cb-body">
-                <ul>
-                    <li>腐植酸が天然の接着剤として機能</li>
-                    <li>粘土-腐植複合体が安定な団粒構造を形成</li>
-                    <li>保水性を適度に高める</li>
-                    <li>可塑性（成形しやすさ）を向上</li>
-                </ul>
-            </div>
-        </div>
-        <div class="comparison-box">
-            <div class="cb-header" style="background:#ef4444;">デメリット</div>
-            <div class="cb-body">
-                <ul>
-                    <li>過度の有機物は乾燥時に収縮ひび割れを起こす</li>
-                    <li>表面が黒ずみ、美観を損ねる</li>
-                    <li>長期的にはカビ・微生物分解の原因</li>
-                    <li>光沢仕上げの障害になることがある</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="alert alert-warning">
-        <strong>結論：</strong> 泥団子には有機物を「少量含む」土が最適。表土（腐葉土が多い）は避け、地表から20〜30cm下の「心土」を使うのが正解。色が明るい（灰色〜茶色）土を選ぼう。
-    </div>
-
-    <h3>2.5 乾燥時の化学変化</h3>
-
-    <p>泥団子が乾燥する過程は、単に水が蒸発するだけの物理プロセスではない。化学的にも重要な変化が起こる。</p>
-
-    <ul class="principle-list">
-        <li>
-            <strong>第1段階：自由水の蒸発（含水率30%→15%）</strong>
-            粒子間の大きな空隙にある自由水が蒸発。体積収縮が顕著に起こる。この段階でひび割れが生じやすい。
-        </li>
-        <li>
-            <strong>第2段階：吸着水の脱着（含水率15%→5%）</strong>
-            粒子表面に吸着した水分子が離脱。粒子間の水素結合が「水を介した間接結合」から「粒子同士の直接結合」に変化し、強度が急激に上昇する。
-        </li>
-        <li>
-            <strong>第3段階：構造水の安定化（含水率5%以下）</strong>
-            粘土結晶内の構造水は常温では脱離しない。この段階で泥団子は最大強度に達する。空気中の湿度と平衡に達し、含水率は2〜4%で安定する。
-        </li>
-    </ul>
-
-    <div class="fun-fact">
-        <p><strong>分子レベルの接着剤転換：</strong> 乾燥過程で起こる最も重要な化学変化は「水架橋→直接水素結合」の転換だ。湿った状態では水分子がスペーサーとして粘土層間に存在し弱い結合しかないが、乾燥すると粘土面同士が直接接触し、強固な水素結合ネットワークが形成される。これが「乾いた泥団子は固い」の正体。</p>
-    </div>
-</div>
-
-<!-- ============================================ -->
-<!-- Section 3: Ceramics -->
-<!-- ============================================ -->
-<div class="section" id="ceramics">
-    <h2 class="section-title">3. 陶芸技術と光る泥だんご</h2>
-    <p class="section-lead">数千年の職人技と、教育学者の偶然の発見が交差する世界。</p>
-
-    <h3>3.1 光る泥だんご（Hikaru Dorodango）── 加用文男教授の研究</h3>
-
-    <p>「光る泥だんご」を学術的に研究し、世界に広めたのは京都教育大学の<strong>加用文男教授</strong>（心理学・教育学）だ。1990年代後半、保育園での子どもの遊びを観察していた加用教授は、一部の子どもたちが泥団子を驚くほど光沢のある球体に仕上げていることに気づいた。</p>
-
-    <p>加用教授はこの現象に科学的に取り組み、以下のことを明らかにした：</p>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:linear-gradient(135deg, var(--accent), var(--accent2));">&#10024;</div>
-                <h4>光沢発生のメカニズム</h4>
-            </div>
-            <ul>
-                <li>表面の微細粘土粒子が研磨により配向する</li>
-                <li>粘土の板状結晶が表面と平行に並び、鏡面を形成</li>
-                <li>乾燥とともに粒子間距離が縮まり、光学的平坦度が向上</li>
-                <li>適切な粒度の土を「ふりかけ」で段階的に付着させる技法が鍵</li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:linear-gradient(135deg, var(--gold), #d97706);">&#128218;</div>
-                <h4>加用メソッドの影響</h4>
-            </div>
-            <ul>
-                <li>2001年の著書で国際的に注目を集める</li>
-                <li>欧米では「Japanese art of Dorodango」として紹介</li>
-                <li>Bruce Gardnerなど海外アーティストが技法を発展</li>
-                <li>科学教育教材としても世界的に普及</li>
-            </ul>
-        </div>
-    </div>
-
-    <h3>3.2 光る泥だんごの3層構造</h3>
-
-    <p>高品質な光る泥だんごは、実は<strong>3層の異なる構造</strong>で構成されている。これは陶芸の「施釉」の概念に近い。</p>
-
-    <!-- Cross-section diagram -->
-    <div class="dorodango-diagram">
-        <div style="position:relative;width:400px;height:320px;">
-            <!-- Core -->
-            <div style="position:absolute;left:60px;top:60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle at 40% 40%, #c4a882, #8B7355 40%, #6b5739 70%, #4a3520 100%);box-shadow:4px 4px 20px rgba(0,0,0,0.3);"></div>
-            <!-- Middle layer -->
-            <div style="position:absolute;left:60px;top:60px;width:200px;height:200px;border-radius:50%;border:3px dashed rgba(255,255,255,0.6);"></div>
-            <!-- Outer layer -->
-            <div style="position:absolute;left:40px;top:40px;width:240px;height:240px;border-radius:50%;border:2px dashed var(--accent);"></div>
-            <!-- Polish surface -->
-            <div style="position:absolute;left:25px;top:25px;width:270px;height:270px;border-radius:50%;border:2px solid var(--accent2);"></div>
-            <!-- Labels -->
-            <div class="dorodango-label" style="top:5px;right:-80px;">研磨面 (< 1μm)</div>
-            <div class="dorodango-label" style="top:45px;right:-100px;">微粒層 (0.5〜1mm)</div>
-            <div class="dorodango-label" style="top:100px;right:-90px;">中間層 (2〜3mm)</div>
-            <div class="dorodango-label" style="top:155px;right:-75px;">芯（コア）</div>
-            <!-- Arrows -->
-            <div style="position:absolute;top:12px;right:-5px;width:30px;height:1px;background:var(--accent2);"></div>
-            <div style="position:absolute;top:52px;right:-5px;width:20px;height:1px;background:var(--accent);"></div>
-            <div style="position:absolute;top:107px;right:5px;width:20px;height:1px;background:#999;"></div>
-            <div style="position:absolute;top:162px;right:25px;width:20px;height:1px;background:#666;"></div>
-        </div>
-    </div>
-
-    <table>
-        <thead>
-            <tr>
-                <th>層</th>
-                <th>厚さ</th>
-                <th>役割</th>
-                <th>使用する土</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>芯（コア）</strong></td>
-                <td>直径の大部分</td>
-                <td>構造強度・球形の保持</td>
-                <td>砂混じりの土（砂:シルト:粘土 ≈ 3:4:3）</td>
-            </tr>
-            <tr>
-                <td><strong>中間層</strong></td>
-                <td>2〜3mm</td>
-                <td>コアの凹凸を埋める・均一化</td>
-                <td>細かいシルト質の土（乾燥粉末）</td>
-            </tr>
-            <tr>
-                <td><strong>研磨層</strong></td>
-                <td>0.5mm未満</td>
-                <td>光沢面の形成</td>
-                <td>極微細粘土粒子（篩い通し）</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>3.3 陶芸のバニシング技法との比較</h3>
-
-    <p>光る泥だんごの研磨プロセスは、陶芸における<strong>バニシング（burnishing）</strong>と本質的に同じ技法だ。焼成前の粘土表面を硬い物で擦って光沢を出す技法は、世界各地で独立に発達した。</p>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#92400e;">&#127866;</div>
-                <h4>テラ・シジラータ (Terra Sigillata)</h4>
-            </div>
-            <p>古代ローマで開発された超微粒子の粘土スリップ。粘土を水に分散させ、長時間静置して上澄みの超微粒子層だけを回収する。この薄い層を焼成前の器に塗り、磨くことで金属的な光沢が得られる。</p>
-            <p><strong>泥だんごとの共通点：</strong> 微粒子の配向による光沢発生のメカニズムが完全に同一。</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#1e293b;">&#128296;</div>
-                <h4>漆喰磨き (鏝磨き)</h4>
-            </div>
-            <p>日本の左官技術では、漆喰（消石灰+海藻糊+麻スサ）の壁面を金鏝で繰り返し押さえ、鏡面に仕上げる「大津磨き」がある。石灰微粒子の配向と炭酸化反応によって、大理石のような光沢が得られる。</p>
-            <p><strong>泥だんごとの共通点：</strong> 微粒子を圧密・配向させる技法。道具が手→鏝に変わっただけ。</p>
-        </div>
-    </div>
-
-    <h3>3.4 なぜ手のひらが最高の研磨ツールなのか</h3>
-
-    <p>興味深いことに、光る泥だんごの研磨には高価な道具は不要だ。人間の<strong>手のひら</strong>が、実は驚くほど優れた研磨ツールである理由がある。</p>
-
-    <ul class="principle-list">
-        <li>
-            <strong>適度な弾性：</strong>
-            手のひらの皮膚は硬すぎず柔らかすぎない弾性を持つ。硬い道具は局所的に力がかかりすぎ、柔らかすぎると研磨効率が落ちる。皮膚の弾性率（約100 kPa）は泥表面の研磨に理想的。
-        </li>
-        <li>
-            <strong>自然な油分：</strong>
-            手のひらの皮脂は天然の潤滑剤として機能し、研磨時の摩擦を適度に低減する。これにより粒子の引き剥がしを防ぎつつ、平坦化を促進する。
-        </li>
-        <li>
-            <strong>触覚フィードバック：</strong>
-            人間の指先には約2,500個/cm<sup>2</sup>の機械受容器があり、表面の微小な凹凸（10μm以下）を感知できる。この感覚がリアルタイムで研磨の進行度を教えてくれる。
-        </li>
-        <li>
-            <strong>体温による乾燥促進：</strong>
-            手の温度（約33℃）が表面の水分蒸発を穏やかに促進し、研磨と乾燥を同時に進行させる。
-        </li>
-    </ul>
-</div>
-
-<!-- ============================================ -->
-<!-- Section 4: World Practices -->
-<!-- ============================================ -->
-<div class="section" id="world">
-    <h2 class="section-title">4. 世界の土の技術</h2>
-    <p class="section-lead">泥を丸めるのは日本だけの話ではない。人類は5万年以上、土と格闘してきた。</p>
-
-    <h3>4.1 世界の土利用技術マップ</h3>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#dc2626;">&#127471;&#127477;</div>
-                <h4>日本 ── 光る泥だんご</h4>
-            </div>
-            <p><strong>技術：</strong> Hikaru Dorodango（光る泥だんご）</p>
-            <p>子どもの遊びから発展した日本独自の技法。泥の球を手のひらで磨き上げ、鏡面光沢を出す。学術研究の対象にもなった世界的にも珍しい泥の「美術」。</p>
-            <p><span class="tag tag-red">遊び</span> <span class="tag tag-purple">美術</span> <span class="tag tag-blue">科学教育</span></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#92400e;">&#127471;&#127477;</div>
-                <h4>日本 ── 版築（はんちく）</h4>
-            </div>
-            <p><strong>技術：</strong> Rammed Earth（版築）</p>
-            <p>土を枠の中に層ごとに詰め、突き固めて壁を作る技法。法隆寺の築地塀や姫路城の石垣の裏込めにも使われた。異なる色の土を重ねることで美しい縞模様が現れる。</p>
-            <p><span class="tag tag-gold">建築</span> <span class="tag tag-green">伝統</span></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#d97706;">&#127466;&#127468;</div>
-                <h4>エジプト ── 日干し煉瓦</h4>
-            </div>
-            <p><strong>技術：</strong> Adobe / Mud Brick</p>
-            <p>ナイル川の氾濫原の粘土にワラを混ぜて成形し、太陽で乾燥させる。紀元前10,000年頃から使われた人類最古の建築材料のひとつ。ワラの繊維が引張補強材として機能する（現代の鉄筋コンクリートの原理と同じ）。</p>
-            <p><span class="tag tag-gold">建築</span> <span class="tag tag-red">古代</span></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#059669;">&#127470;&#127475;</div>
-                <h4>インド ── 土の芸術</h4>
-            </div>
-            <p><strong>技術：</strong> Terracotta / Mud Art</p>
-            <p>インドでは数千年にわたりテラコッタ彫刻が制作されてきた。また農村部では今でも牛糞と粘土を混ぜた土壁（Lipai）が使われる。牛糞中の繊維質と尿素が天然の結合材・防虫剤として機能する。</p>
-            <p><span class="tag tag-purple">美術</span> <span class="tag tag-gold">建築</span></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#7c2d12;">&#127482;&#127480;</div>
-                <h4>アメリカ先住民 ── 土器</h4>
-            </div>
-            <p><strong>技術：</strong> Pueblo Pottery</p>
-            <p>ニューメキシコ州のプエブロ族は、ろくろを使わず手びねりで精緻な土器を制作する。特にサン・イルデフォンソ族のMaria Martinezが開発した黒色光沢土器は世界的に有名。還元焼成で黒色化し、バニシングで鏡面に仕上げる。</p>
-            <p><span class="tag tag-purple">美術</span> <span class="tag tag-green">伝統</span></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#1d4ed8;">&#127468;&#127463;</div>
-                <h4>ヨーロッパ ── コブ建築</h4>
-            </div>
-            <p><strong>技術：</strong> Cob Construction</p>
-            <p>イングランド南西部のデヴォン州で特に発達した土壁建築。粘土質の土にワラと水を混ぜ、素手で積み上げる。型枠を使わないのが版築との違い。500年以上の耐久性を持つ建物が現存する。</p>
-            <p><span class="tag tag-gold">建築</span> <span class="tag tag-blue">持続可能</span></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#b45309;">&#127464;&#127474;</div>
-                <h4>西アフリカ ── 土のモスク</h4>
-            </div>
-            <p><strong>技術：</strong> Banco / Earth Architecture</p>
-            <p>マリ共和国のジェンネの大モスクに代表される西アフリカの土建築。バンコ（banco）と呼ばれる粘土・砂・水・有機物の混合材で建てられ、毎年の塗り直し祭り（Crepissage）で維持される。世界最大の土建築として世界遺産に登録。</p>
-            <p><span class="tag tag-gold">建築</span> <span class="tag tag-green">世界遺産</span></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#6d28d9;">&#127464;&#127475;</div>
-                <h4>中国 ── 土楼（どろう）</h4>
-            </div>
-            <p><strong>技術：</strong> Tulou (Hakka Earth Building)</p>
-            <p>福建省の客家人が建てた巨大な版築建築。直径70mに達する円形の共同住宅で、外壁は版築土壁（厚さ1〜2m）で築かれる。12世紀から700年以上の耐久性を持ち、世界遺産に登録されている。泥団子と同じ材料で家が建つ証拠。</p>
-            <p><span class="tag tag-gold">建築</span> <span class="tag tag-green">世界遺産</span></p>
-        </div>
-    </div>
-
-    <h3>4.2 技術比較 ── 共通する科学原理</h3>
-
-    <table>
-        <thead>
-            <tr>
-                <th>技術</th>
-                <th>粒度調整</th>
-                <th>繊維補強</th>
-                <th>締固め</th>
-                <th>表面処理</th>
-                <th>乾燥管理</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>光る泥だんご</td>
-                <td>多層構成で最適化</td>
-                <td>なし</td>
-                <td>手で圧密</td>
-                <td>手のひら研磨</td>
-                <td>陰干し+袋保管</td>
-            </tr>
-            <tr>
-                <td>日干し煉瓦</td>
-                <td>経験的に調整</td>
-                <td>ワラ・動物毛</td>
-                <td>型枠成形</td>
-                <td>なし</td>
-                <td>天日干し</td>
-            </tr>
-            <tr>
-                <td>版築</td>
-                <td>篩い分け</td>
-                <td>なし（または少量）</td>
-                <td>杵で突き固め</td>
-                <td>鏝押さえ</td>
-                <td>自然乾燥</td>
-            </tr>
-            <tr>
-                <td>コブ</td>
-                <td>経験的</td>
-                <td>ワラ（大量）</td>
-                <td>足踏み+手積み</td>
-                <td>漆喰仕上げ</td>
-                <td>段階的積み上げ</td>
-            </tr>
-            <tr>
-                <td>バニシング陶器</td>
-                <td>粘土精製</td>
-                <td>なし</td>
-                <td>成形+乾燥</td>
-                <td>石・ガラス研磨</td>
-                <td>管理乾燥+焼成</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="alert alert-success">
-        <strong>文明横断的な発見：</strong> 全大陸の土の技術に共通するのは「粒度分布の最適化」「水分量の管理」「締固めによる密度向上」の3原則。泥団子はこの人類共通の知恵のミニチュア版と言える。
-    </div>
-</div>
-
-<!-- ============================================ -->
-<!-- Section 4.5: Kids Version - 自由研究 泥団子 -->
-<!-- ============================================ -->
-<div class="section" id="kids" style="background:linear-gradient(135deg, #f0fdf4, #dcfce7);">
-    <h2 class="section-title">お子さんと一緒に作ろう！5ステップ簡易版 ── 自由研究にも最適な泥団子の科学</h2>
-    <p class="section-lead">難しい科学用語はナシ！お子さんと一緒に「光る泥だんごの作り方」を楽しみましょう。所要時間の目安は約2〜3時間です。</p>
-
-    <div class="alert alert-success">
-        <strong>保護者の方へ：</strong> 各ステップの「科学ポイント」をお子さんに教えてあげると、遊びが学びに変わります。「〇〇って知ってた？」と声をかけてあげてくださいね。
-    </div>
+<div class="section" id="kids">
+    <h2 class="section-title">子供向け簡易版 ── 5ステップでざっくり作ろう</h2>
+    <p class="section-lead">まずはこの5ステップで体験してみよう。細かいコツや科学的に最適化された手順は完全版で。</p>
 
     <div class="step-box">
         <span class="step-number">1</span>
         <div class="step-content">
-            <h4>いい土をさがそう <span class="step-time">20分</span></h4>
-            <p>公園や庭で、ギュッと握ると形が残る土を探します。サラサラすぎる砂はNG。「握ってみて、手を開いても崩れない土がチャンピオンだよ！」と言ってあげてね。</p>
-            <p style="color:#065f46;font-size:13px;"><strong>科学ポイント：</strong> 粘土という目に見えないくらい小さな粒が入っている土ほど、よくくっつくんだよ。</p>
+            <h4>土を集めてふるう <span class="step-time">20分</span></h4>
+            <p>粘土っぽい土（握って形が残る土）を集める。石や枝を取り除き、できれば茶こしでふるう。</p>
         </div>
     </div>
 
     <div class="step-box">
         <span class="step-number">2</span>
         <div class="step-content">
-            <h4>おにぎりみたいに丸めよう <span class="step-time">30分</span></h4>
-            <p>水を少しずつ足しながら、おにぎりを握るように丸めます。「ギュッギュッと優しく回しながら握ってね。強すぎると割れちゃうよ」と伝えましょう。</p>
-            <p style="color:#065f46;font-size:13px;"><strong>科学ポイント：</strong> 丸い形は一番壊れにくい形なんだよ。地球もお月さまも丸いのは、丸が一番安定する形だからなんだ。</p>
+            <h4>水を混ぜて丸める <span class="step-time">30分</span></h4>
+            <p>土に少しずつ水を加え、「耳たぶくらいの硬さ」にする。両手で均等に圧をかけながら球にする。</p>
         </div>
     </div>
 
     <div class="step-box">
         <span class="step-number">3</span>
         <div class="step-content">
-            <h4>さらさらの土をかけよう <span class="step-time">30分</span></h4>
-            <p>乾いたサラサラの土を、泥団子の表面にパラパラとかけて、手で優しくなじませます。これを5〜10回繰り返します。「泥団子にお化粧してあげるんだよ」と説明してあげてね。</p>
-            <p style="color:#065f46;font-size:13px;"><strong>科学ポイント：</strong> 細かい粒が表面のデコボコを埋めてくれるんだよ。これが後で光る秘密！</p>
+            <h4>乾いた土をまぶす <span class="step-time">30分</span></h4>
+            <p>サラサラの乾いた土を表面に少しずつ振りかけ、手でなじませる。これを何度も繰り返す。</p>
         </div>
     </div>
 
     <div class="step-box">
         <span class="step-number">4</span>
         <div class="step-content">
-            <h4>おやすみさせよう <span class="step-time">30分〜1時間（休憩を挟む）</span></h4>
-            <p>ビニール袋に入れて20分おやすみ → 出して少し乾かす → また袋に入れる。これを2〜3回。「泥団子も疲れるから休ませてあげようね」と言ってあげてください。</p>
-            <p style="color:#065f46;font-size:13px;"><strong>科学ポイント：</strong> ゆっくり乾かすと中の水が均等に動いて、ひび割れしにくくなるんだ。</p>
+            <h4>休ませる <span class="step-time">30分〜</span></h4>
+            <p>ビニール袋に入れて30分休ませる。出して表面が湿っていたらまた乾いた土をまぶす。これを2〜3回。</p>
         </div>
     </div>
 
     <div class="step-box">
         <span class="step-number">5</span>
         <div class="step-content">
-            <h4>ピカピカに磨こう <span class="step-time">30分〜1時間</span></h4>
-            <p>手のひらで優しくクルクル磨きます。もっとピカピカにしたいなら、ビニール袋やタオルでも磨いてみよう！「鏡みたいに顔が映るかな？チャレンジしてみよう！」</p>
-            <p style="color:#065f46;font-size:13px;"><strong>科学ポイント：</strong> 磨くと表面のデコボコがなくなって、光がまっすぐ跳ね返るようになるんだよ。ダイヤモンドが光るのも同じ理由！</p>
+            <h4>磨く <span class="step-time">60分</span></h4>
+            <p>手のひらで優しくこすり、表面がスベスベになったらビニール袋やフリースの布で磨く。根気よく続けると光り始める。</p>
         </div>
     </div>
 
-    <div class="fun-fact">
-        <p><strong>失敗しても大丈夫！</strong> ひび割れたり、崩れたりしても、それは「実験」のうち。「なんで割れたのかな？」と一緒に考えることが、一番の学びになります。何度でもやり直せるのが泥団子のいいところ！</p>
-    </div>
-
-    <div class="alert alert-info">
-        <strong>自由研究のヒント：</strong> 泥団子は自由研究にぴったりのテーマです。レポートには「(1) どんな土を使ったか（場所・色・手触り）」「(2) どんな工夫をしたか、何回磨いたか」「(3) うまくいったこと・失敗したこと・なぜそうなったと思うか」の3つを書くと、先生もびっくりの科学レポートになります。異なる場所の土で比較実験をすると、さらにレベルアップ！
+    <div class="alert alert-warning">
+        <strong>これだけでもそこそこ光るけど...</strong> 本当に「鏡のように光る泥団子」を作るには、土の選び方、水分量の科学的コントロール、4段階の研磨プロセスなど、もっと細かいテクニックが必要です。完全版では、物理学・化学・陶芸の知見を統合した「科学的に最強の手順」を5フェーズに分けて詳しく解説しています。
     </div>
 </div>
 
 <!-- ============================================ -->
-<!-- Section 5: Ultimate Method -->
+<!-- 完全版で読める内容 -->
 <!-- ============================================ -->
-<div class="section" id="method">
-    <h2 class="section-title">5. 光る泥だんごの作り方 ── 究極の科学的泥団子メソッド</h2>
-    <p class="section-lead">物理学・化学・陶芸・世界の建築技術の全知見を統合した、科学的に最適化された手順。</p>
+<div class="section" id="contents" style="background:#fff;">
+    <h2 class="section-title">完全版で読める内容</h2>
+    <p class="section-lead">noteの完全版では、7つの学問領域を横断した15,000字超の徹底分析をお届けします。</p>
 
-    <h3>5.1 土の選定 ── すべてはここから始まる</h3>
-
-    <div class="alert alert-info">
-        <strong>最重要ルール：</strong> 泥団子の品質の80%は「土の選定」で決まる。この段階を怠ると、後のどんな技術も無力になる。
-    </div>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#10b981;">&#10004;</div>
-                <h4>良い土の条件</h4>
-            </div>
-            <ul>
-                <li>色：灰色〜茶色〜赤褐色（鉄分を含む）</li>
-                <li>触感：湿らせると粘り気がある</li>
-                <li>リボンテスト：薄く伸ばして3cm以上切れない</li>
-                <li>場所：地表20〜30cm下の心土</li>
-                <li>粒度：砂利や小石を含まない</li>
-                <li>匂い：腐敗臭がしない（有機物が少ない）</li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#ef4444;">&#10008;</div>
-                <h4>避けるべき土</h4>
-            </div>
-            <ul>
-                <li>純粋な砂（粘着力がなく固まらない）</li>
-                <li>黒土・腐葉土（有機物が多すぎる）</li>
-                <li>純粋な粘土（乾燥ひび割れしやすい）</li>
-                <li>建設現場の埋戻し土（品質が不均一）</li>
-                <li>化学物質で汚染された土</li>
-                <li>園芸用の培養土（軽石・ピートモスが多い）</li>
-            </ul>
-        </div>
-    </div>
-
-    <h4>簡易土壌テスト（所要時間：5分）</h4>
-    <table>
-        <thead>
-            <tr>
-                <th>テスト</th>
-                <th>方法</th>
-                <th>判定</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>握りテスト</strong></td>
-                <td>湿った土を握って手を開く</td>
-                <td>崩れない→粘土十分 / ボロボロ→砂が多すぎ</td>
-            </tr>
-            <tr>
-                <td><strong>リボンテスト</strong></td>
-                <td>湿った土を親指と人差し指で薄く伸ばす</td>
-                <td>5cm以上のリボン→粘土過多 / 3cm→最適 / 1cm以下→粘土不足</td>
-            </tr>
-            <tr>
-                <td><strong>瓶テスト</strong></td>
-                <td>土と水をペットボトルに入れて振り、1時間放置</td>
-                <td>底から砂→シルト→粘土の層に分離。比率を確認</td>
-            </tr>
-            <tr>
-                <td><strong>歯テスト</strong></td>
-                <td>少量の土を前歯で噛む</td>
-                <td>ジャリジャリ→砂が多い / ヌルヌル→粘土が多い / 中間→理想的</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>5.2 究極の7ステップ手順</h3>
-
-    <div class="step-box">
-        <div class="step-number">1</div>
-        <div class="step-content">
-            <h4>土の準備と配合 <span class="step-time">15分</span></h4>
-            <p>2種類の土を準備する。<strong>(A) コア用の土：</strong> 砂とシルトと粘土が混ざった土。小石や根を取り除く。<strong>(B) 仕上げ用の粉：</strong> 乾燥した土を細かく砕き、できれば目の細かい篩（茶漉しレベル：0.5mm以下）で篩って微粒子だけを集める。</p>
-            <p><strong>水分量の調整：</strong> コア用の土に少しずつ水を加え、「握っても指から水が染み出ず、手を開いても崩れない」状態にする（含水率約20%）。</p>
-        </div>
-    </div>
-
-    <div class="step-box">
-        <div class="step-number">2</div>
-        <div class="step-content">
-            <h4>コアの成形 <span class="step-time">10分</span></h4>
-            <p>両手で土を包み込み、<strong>回転させながら均等に圧力をかけて</strong>球形に成形する。最初はやや大きめ（完成サイズの1.1倍程度）に作る。乾燥で約10%収縮するため。</p>
-            <p><strong>ポイント：</strong> 空気を抱き込まないよう、外側から中心に向かって押し込むように圧密する。表面にひび割れが出たら、少量の水をつけて修復。</p>
-            <p><strong>推奨サイズ：</strong> 直径5〜7cm（大きすぎると乾燥ムラ、小さすぎると作業困難）。</p>
-        </div>
-    </div>
-
-    <div class="step-box">
-        <div class="step-number">3</div>
-        <div class="step-content">
-            <h4>初期乾燥 <span class="step-time">20〜30分</span></h4>
-            <p>成形したコアを手のひらで<strong>ゆっくり回しながら</strong>、表面が「しっとりしているが手につかない」状態になるまで乾燥させる。直射日光は厳禁（急速乾燥はひび割れの原因）。日陰で風に当てるのが最適。</p>
-        </div>
-    </div>
-
-    <div class="step-box">
-        <div class="step-number">4</div>
-        <div class="step-content">
-            <h4>粉かけ（最重要工程） <span class="step-time">30〜60分</span></h4>
-            <p>ここが光る泥だんごの核心技術。篩った細かい乾燥粉を表面に<strong>少量ずつふりかけ</strong>、手のひらで表面になじませる。このプロセスを<strong>繰り返す</strong>。</p>
-            <p><strong>科学的メカニズム：</strong> 乾燥粉がコアの表面水分を吸収しながら薄い層を形成する。粉→水分吸収→圧密→乾燥→粉→...のサイクルが微細粒子の高密度層を段階的に構築する。</p>
-            <p><strong>コツ：</strong> 一度に大量の粉をかけない。「薄く・何度も」が鉄則。表面の水分が足りなくなったら、わずかに息を吹きかけて湿気を補う（霧吹きは水が多すぎる）。</p>
-        </div>
-    </div>
-
-    <div class="step-box">
-        <div class="step-number">5</div>
-        <div class="step-content">
-            <h4>ビニール袋熟成 <span class="step-time">30分 × 3回</span></h4>
-            <p>泥団子をビニール袋に入れて密封し、30分放置する。これは<strong>含水率の均一化</strong>のため。表面は乾燥しているが内部はまだ湿っている状態では、水分が内部から表面に移動する。この水分移動が完了するのを待つ。</p>
-            <p>袋から出すと表面が再び湿っているので、粉かけ（ステップ4）を繰り返す。この「粉かけ→袋→粉かけ→袋」のサイクルを<strong>最低3回</strong>繰り返す。</p>
-        </div>
-    </div>
-
-    <div class="step-box">
-        <div class="step-number">6</div>
-        <div class="step-content">
-            <h4>研磨（ポリッシング） <span class="step-time">1〜3時間</span></h4>
-            <p>最終段階。表面が均一に半乾燥の状態で、<strong>手のひらで軽く・速く回転させながら磨く</strong>。圧力をかけすぎない（凹む原因になる）。手のひらの油分が天然潤滑剤として機能する。</p>
-            <p><strong>段階的アプローチ：</strong></p>
-            <ul>
-                <li>第1段階（30分）：やや強めの圧で表面の凹凸を均す</li>
-                <li>第2段階（30分）：中程度の圧で光沢の芽を出す</li>
-                <li>第3段階（30分〜）：軽い圧でひたすら磨く。光沢が出始めたらほぼゴール</li>
-            </ul>
-            <p><strong>上級テクニック：</strong> ビニール袋の表面で軽く磨くと、さらに高い光沢が得られる場合がある（袋の平滑な表面が研磨効率を上げる）。</p>
-        </div>
-    </div>
-
-    <div class="step-box">
-        <div class="step-number">7</div>
-        <div class="step-content">
-            <h4>最終乾燥と保管 <span class="step-time">24〜72時間</span></h4>
-            <p>完成した泥団子を日陰で自然乾燥させる。完全に乾燥するまで<strong>24〜72時間</strong>。急激な温度変化を避け、直射日光に当てない。</p>
-            <p><strong>保管：</strong> 完全乾燥後は密封容器で保管すると光沢が持続する。空気中の湿度変化で表面が白化（エフロレッセンス）することがあるが、軽く磨き直せば回復する。</p>
-        </div>
-    </div>
-
-    <h3>5.3 全工程タイムライン</h3>
-
-    <div class="phase-grid">
-        <div class="phase-item" style="background:#f0fdf4;">
-            <div class="phase-number" style="background:#10b981;">1</div>
-            <h4>準備</h4>
-            <p>土の選定と配合<br><strong>15分</strong></p>
-        </div>
-        <div class="phase-item" style="background:#eff6ff;">
-            <div class="phase-number" style="background:#3b82f6;">2</div>
-            <h4>成形</h4>
-            <p>コア作成<br><strong>10分</strong></p>
-        </div>
-        <div class="phase-item" style="background:#fef3c7;">
-            <div class="phase-number" style="background:#f59e0b;">3</div>
-            <h4>粉かけ</h4>
-            <p>多層形成<br><strong>1〜2時間</strong></p>
-        </div>
-        <div class="phase-item" style="background:#ede9fe;">
-            <div class="phase-number" style="background:#7c3aed;">4</div>
-            <h4>熟成</h4>
-            <p>袋保管サイクル<br><strong>1.5時間</strong></p>
-        </div>
-        <div class="phase-item" style="background:#fce7f3;">
-            <div class="phase-number" style="background:#ec4899;">5</div>
-            <h4>研磨</h4>
-            <p>ポリッシング<br><strong>1〜3時間</strong></p>
-        </div>
-        <div class="phase-item" style="background:#f0fdf4;">
-            <div class="phase-number" style="background:#059669;">6</div>
-            <h4>乾燥</h4>
-            <p>最終乾燥<br><strong>24〜72h</strong></p>
-        </div>
-    </div>
-
-    <div class="alert alert-success">
-        <strong>合計所要時間：</strong> 作業時間 約3〜6時間 + 乾燥時間 24〜72時間。「光る泥だんご」は一朝一夕にはできない。しかし、その過程こそが楽しみなのだ。
-    </div>
-</div>
-
-<!-- ============================================ -->
-<!-- Section 6: Common Mistakes -->
-<!-- ============================================ -->
-<div class="section" id="mistakes">
-    <h2 class="section-title">6. よくある失敗と科学的対策</h2>
-    <p class="section-lead">失敗の原因がわかれば、対策は明確。全ての失敗には科学的な理由がある。</p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>失敗</th>
-                <th>科学的原因</th>
-                <th>対策</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>ひび割れ</strong></td>
-                <td>乾燥速度が不均一。表面と内部の含水率差が大きいと引張応力が発生し、表面が割れる。モンモリロナイト含有率が高い土で特に顕著。</td>
-                <td>日陰で緩やかに乾燥。ビニール袋で含水率を均一化するサイクルを増やす。粘土100%の土を避け、砂・シルトを混ぜる。</td>
-            </tr>
-            <tr>
-                <td><strong>光らない</strong></td>
-                <td>表面粗さが可視光波長（380nm）以上。仕上げ用粉の粒子が粗すぎるか、研磨が不十分。</td>
-                <td>より細かい粉を使用（茶漉し以下）。研磨時間を延長。半乾燥状態で磨くこと（乾燥しすぎると粒子が動かない）。</td>
-            </tr>
-            <tr>
-                <td><strong>崩壊・ボロボロ</strong></td>
-                <td>粘土含有率が低すぎる（バインダー不足）。または水分が少なすぎて毛細管架橋が形成されていない。</td>
-                <td>粘土の多い土に変更。水分量を増やす（ただし上限は指の間から滲まない程度）。</td>
-            </tr>
-            <tr>
-                <td><strong>変形する</strong></td>
-                <td>含水率が高すぎ、土の降伏応力を超えている。自重で変形する。</td>
-                <td>水分を減らす。初期成形後、ある程度乾燥してから本格的な球形修正を行う。</td>
-            </tr>
-            <tr>
-                <td><strong>粉が付着しない</strong></td>
-                <td>コア表面が乾燥しすぎて接着力がない。または粉が湿っている。</td>
-                <td>表面に軽く息を吹きかけて湿気を与えてから粉をかける。粉は完全に乾燥したものを使用。</td>
-            </tr>
-            <tr>
-                <td><strong>白い粉が浮く</strong></td>
-                <td>エフロレッセンス（白華現象）。内部の可溶性塩類が水分とともに表面に移動し、蒸発後に結晶化する。</td>
-                <td>軽く湿らせた布で拭き取り、再研磨。根本的には塩類の少ない土を使うこと。</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<!-- ============================================ -->
-<!-- Section 7: Data & Experiments -->
-<!-- ============================================ -->
-<div class="section" id="data">
-    <h2 class="section-title">7. データ＆実験 ── 泥団子を数値で語る</h2>
-    <p class="section-lead">科学的に語るなら、データがないと始まらない。</p>
-
-    <h3>7.1 泥団子の物性データ</h3>
-
-    <table>
-        <thead>
-            <tr>
-                <th>物性</th>
-                <th>典型値</th>
-                <th>比較対象</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>乾燥密度</td>
-                <td>1.6〜1.9 g/cm<sup>3</sup></td>
-                <td>コンクリート: 2.3 / 木材: 0.5</td>
-            </tr>
-            <tr>
-                <td>一軸圧縮強度</td>
-                <td>0.5〜3.0 MPa</td>
-                <td>レンガ: 10〜40 / 版築: 1〜5</td>
-            </tr>
-            <tr>
-                <td>表面粗さ（光沢仕上げ時）</td>
-                <td>Ra 0.1〜1.0 μm</td>
-                <td>研磨ガラス: 0.01 / 新聞紙: 10</td>
-            </tr>
-            <tr>
-                <td>含水率（完全乾燥後）</td>
-                <td>2〜4%</td>
-                <td>大気平衡状態</td>
-            </tr>
-            <tr>
-                <td>重量（直径6cm）</td>
-                <td>150〜250g</td>
-                <td>テニスボール: 57g</td>
-            </tr>
-            <tr>
-                <td>鏡面反射率（最高品質時）</td>
-                <td>15〜30%</td>
-                <td>ガラス: 4% / 鏡: 85%</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>7.2 土質別の泥団子性能比較</h3>
-
-    <h4>5種の土で作った泥団子の性能評価</h4>
-
-    <!-- Performance bar charts -->
-    <div style="margin:20px 0;">
-        <h4>成形しやすさ</h4>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>関東ローム（火山灰土）</span><span>85/100</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:85%;background:linear-gradient(to right, var(--accent), var(--accent2));"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>赤土（ラテライト系）</span><span>90/100</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:90%;background:linear-gradient(to right, var(--accent), var(--accent2));"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>河川敷の砂質土</span><span>40/100</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:40%;background:linear-gradient(to right, #94a3b8, #cbd5e1);"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>校庭の土（砂混じり）</span><span>70/100</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:70%;background:linear-gradient(to right, #60a5fa, #93c5fd);"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>純粘土（陶芸用）</span><span>60/100</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:60%;background:linear-gradient(to right, #f59e0b, #fbbf24);"></div></div>
-        </div>
-    </div>
-
-    <div style="margin:20px 0;">
-        <h4>光沢ポテンシャル</h4>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>関東ローム（火山灰土）</span><span>75/100</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:75%;background:linear-gradient(to right, var(--accent), var(--accent2));"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>赤土（ラテライト系）</span><span>95/100</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:95%;background:linear-gradient(to right, var(--accent), var(--accent2));"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>河川敷の砂質土</span><span>15/100</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:15%;background:linear-gradient(to right, #94a3b8, #cbd5e1);"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>校庭の土（砂混じり）</span><span>55/100</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:55%;background:linear-gradient(to right, #60a5fa, #93c5fd);"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>純粘土（陶芸用）</span><span>90/100</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:90%;background:linear-gradient(to right, #f59e0b, #fbbf24);"></div></div>
-        </div>
-    </div>
-
-    <div style="margin:20px 0;">
-        <h4>耐久性（落下テスト：1mからの落下回数）</h4>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>関東ローム（火山灰土）</span><span>3〜5回</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:50%;background:linear-gradient(to right, var(--accent), var(--accent2));"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>赤土（ラテライト系）</span><span>5〜8回</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:80%;background:linear-gradient(to right, var(--accent), var(--accent2));"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>河川敷の砂質土</span><span>0〜1回</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:10%;background:linear-gradient(to right, #94a3b8, #cbd5e1);"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>校庭の土（砂混じり）</span><span>2〜4回</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:40%;background:linear-gradient(to right, #60a5fa, #93c5fd);"></div></div>
-        </div>
-        <div class="stat-bar-group">
-            <div class="stat-bar-label"><span>純粘土（陶芸用）</span><span>1〜2回</span></div>
-            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:20%;background:linear-gradient(to right, #f59e0b, #fbbf24);"></div></div>
-        </div>
-    </div>
-
-    <div class="alert alert-fun">
-        <p><strong>総合チャンピオン：</strong> <strong>赤土（ラテライト系）</strong>が成形性・光沢・耐久性の全てで最高評価。カオリナイト＋酸化鉄の組み合わせが、粘着性と表面平滑性と硬度を全て満たすため。日本では関東地方南部の「赤土」や、九州の「シラス台地」周辺の赤土が入手しやすい。</p>
-    </div>
-
-    <h3>7.3 泥団子に関する驚きのデータ</h3>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#dc2626;">&#127942;</div>
-                <h4>ギネス級の泥団子</h4>
-            </div>
-            <p>Bruce Gardner氏（アメリカ）が制作する光る泥だんごは、表面反射率が推定30%以上に達し、「世界で最も美しい泥だんご」と称される。高級美術品として1個数百ドルで取引されることもある。</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#7c3aed;">&#128200;</div>
-                <h4>粘土の比表面積</h4>
-            </div>
-            <p>モンモリロナイト粘土の比表面積は最大<strong>800 m<sup>2</sup>/g</strong>。つまり1gの粘土を広げると、テニスコート3面分の表面積になる。この巨大な表面積が驚異的な結合力を生む。</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#059669;">&#127758;</div>
-                <h4>地球上の人工構造物</h4>
-            </div>
-            <p>世界人口の約<strong>30%</strong>（約23億人）が土壁の建物に住んでいる。泥団子と同じ材料・同じ科学原理で、巨大な建物が成立している。万里の長城の一部も版築で造られた。</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#f59e0b;">&#9200;</div>
-                <h4>最速の泥団子</h4>
-            </div>
-            <p>日本の保育園では、熟練した5歳児が<strong>約20分</strong>で「そこそこ光る」泥だんごを完成させる。大人が科学的に最適化した方法で作ると、光沢仕上げまで<strong>3〜6時間</strong>。子どもの直感は侮れない。</p>
-        </div>
-    </div>
-
-    <h3>7.4 泥団子の耐久試験シミュレーション</h3>
-
-    <table>
-        <thead>
-            <tr>
-                <th>テスト項目</th>
-                <th>方法</th>
-                <th>良品の基準</th>
-                <th>備考</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>落下強度</strong></td>
-                <td>1mの高さからコンクリートに落下</td>
-                <td>3回以上耐える</td>
-                <td>落下角度で結果が変わる（点接触vs面接触）</td>
-            </tr>
-            <tr>
-                <td><strong>圧縮強度</strong></td>
-                <td>平面で上から荷重をかける</td>
-                <td>5kg以上に耐える</td>
-                <td>球形なので接触面積が小さく、局所応力が大きい</td>
-            </tr>
-            <tr>
-                <td><strong>耐水性</strong></td>
-                <td>水に5分間浸漬</td>
-                <td>形状を30秒以上保持</td>
-                <td>焼成していない泥は本質的に水に弱い</td>
-            </tr>
-            <tr>
-                <td><strong>光沢持続性</strong></td>
-                <td>室内保管1ヶ月後の目視評価</td>
-                <td>光沢が維持されている</td>
-                <td>密封保管が光沢持続の鍵</td>
-            </tr>
-            <tr>
-                <td><strong>真球度</strong></td>
-                <td>3方向の直径を計測</td>
-                <td>最大差 < 2mm</td>
-                <td>プロは最大差1mm以内を達成</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<!-- ============================================ -->
-<!-- Section 8: Psychology -->
-<!-- ============================================ -->
-<div class="section" id="psychology">
-    <h2 class="section-title">8. なぜ子どもは泥団子に惹かれるのか</h2>
-    <p class="section-lead">発達心理学から見る、泥遊びの深い意味。</p>
-
-    <h3>8.1 感覚統合と泥遊び</h3>
-
-    <p>発達心理学において、泥遊びは<strong>感覚統合（sensory integration）</strong>の重要な機会として位置づけられている。泥団子作りは、以下の感覚を同時に刺激する多感覚体験だ。</p>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#3b82f6;">&#9995;</div>
-                <h4>触覚 (Tactile)</h4>
-            </div>
-            <p>泥の温度、湿度、粘度、粒度を指先で感知。皮膚の機械受容器（マイスナー小体、パチニ小体など）がフル稼働する。触覚の発達は脳の体性感覚野の成熟に直結する。</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#10b981;">&#128170;</div>
-                <h4>固有受容覚 (Proprioception)</h4>
-            </div>
-            <p>握る力の加減、手首の回転、両手の協調運動を通じて、筋肉・関節からのフィードバックを統合する。「どのくらいの力で握れば崩れないか」を学ぶプロセスは、高度な運動制御の訓練。</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:#f59e0b;">&#128065;</div>
-                <h4>視覚 (Visual)</h4>
-            </div>
-            <p>球形の対称性を目で確認しながら修正する作業は、空間認知能力と手と目の協調（hand-eye coordination）を育てる。光沢の変化を観察する過程は、光学現象への直感的理解を養う。</p>
-        </div>
-    </div>
-
-    <h3>8.2 フロー体験としての泥団子</h3>
-
-    <p>心理学者ミハイ・チクセントミハイの<strong>フロー理論</strong>によれば、人間が最も深い没入感（フロー状態）を体験するのは、「スキルレベルと課題の難易度がちょうど釣り合っている」ときだ。</p>
-
-    <p>泥団子作りはフロー体験の条件を完璧に満たす：</p>
-
-    <ul class="principle-list">
+    <ul class="toc-list">
         <li>
-            <strong>明確な目標：</strong>
-            「丸くする」「光らせる」というシンプルで明確なゴール。達成度が一目でわかる。
+            <span class="toc-icon">1</span>
+            <div>
+                科学的に最強の泥団子の作り方（5フェーズ詳細）
+                <span class="toc-desc">土の準備 → 芯の成形 → 殻の形成 → 乾燥制御 → 4段階研磨。各フェーズの科学的根拠と具体的手順を完全解説</span>
+            </div>
         </li>
         <li>
-            <strong>即座のフィードバック：</strong>
-            力の入れ方を変えると、即座に形が変わる。粉をかけると、すぐに手触りが変わる。行動と結果が直結している。
+            <span class="toc-icon">2</span>
+            <div>
+                土の選び方ガイド
+                <span class="toc-desc">最適な粒度分布（粘土・シルト・砂の配合比率）、リボンテストによる簡易判定法、採取スポットの探し方</span>
+            </div>
         </li>
         <li>
-            <strong>段階的な難易度：</strong>
-            「まず固める→球にする→光らせる」とスキルに応じて目標が自然にレベルアップする。初心者でも上級者でもそれぞれのレベルで挑戦がある。
+            <span class="toc-icon">3</span>
+            <div>
+                世界の類似技術から学ぶテクニック
+                <span class="toc-desc">日本の左官「大津磨き」、古代ローマのテラ・シギラタ、モロッコのタデラクト、アフリカの土器 ── 人類5000年の知恵を泥団子に応用</span>
+            </div>
         </li>
         <li>
-            <strong>コントロール感：</strong>
-            材料は無料（土と水）。失敗しても何度でもやり直せる。リスクゼロで挑戦と達成を繰り返せる。
+            <span class="toc-icon">4</span>
+            <div>
+                失敗パターンと科学的な対策
+                <span class="toc-desc">割れる・光らない・歪む ── よくある失敗の原因を物理学で特定し、具体的な対処法を解説</span>
+            </div>
+        </li>
+        <li>
+            <span class="toc-icon">5</span>
+            <div>
+                AIに分析させたプロンプト公開
+                <span class="toc-desc">この記事の分析に使った実際のAIプロンプトを公開。自分でもAIを使って研究を深める方法</span>
+            </div>
+        </li>
+        <li>
+            <span class="toc-icon">6</span>
+            <div>
+                自由研究レポートの書き方
+                <span class="toc-desc">泥団子を自由研究テーマにする方法。実験の設計、データの記録、レポートの構成まで</span>
+            </div>
         </li>
     </ul>
+</div>
 
-    <div class="fun-fact">
-        <p><strong>教育的価値：</strong> 加用文男教授は著書の中で、光る泥だんご作りが子どもに与える教育効果として「根気」「工夫する力」「達成感」「仲間とのコミュニケーション」を挙げている。泥団子ひとつが、非認知能力（社会情動的スキル）の総合トレーニングになっているのだ。なお、大人がやっても同じ効果がある。むしろ大人こそ、結果を気にせず「過程を楽しむ」体験が必要かもしれない。</p>
-    </div>
-
-    <h3>8.3 マインドフルネスとしての泥団子</h3>
-
-    <p>近年注目されている<strong>マインドフルネス（mindfulness）</strong>の実践としても、泥団子作りは優れた媒体だ。繰り返しの動作に集中し、触感に意識を向け、「今この瞬間」に没頭する。瞑想アプリよりも効果的かもしれない。</p>
-
-    <p>実際に、一部の陶芸療法プログラムでは泥団子作りが心理療法の一環として取り入れられている。粘土を触る行為にはストレスホルモン（コルチゾール）の低減効果があることが複数の研究で示されている。</p>
+<!-- ============================================ -->
+<!-- CTA Section -->
+<!-- ============================================ -->
+<div class="section" id="cta" style="background:linear-gradient(135deg, var(--primary) 0%, #1a1040 50%, var(--accent2) 100%);color:#fff;text-align:center;padding:80px 60px;">
+    <h2 style="color:#fff;font-size:26px;border:none;margin-bottom:12px;font-weight:800;">科学的に最強の泥団子、作ってみませんか？</h2>
+    <p style="color:rgba(255,255,255,0.75);max-width:600px;margin:0 auto 16px;font-size:15px;">
+        原理がわかれば、泥団子作りは「運」じゃなく「科学」になる。<br>
+        完全版では、物理学・化学・陶芸の知見を統合した<br>
+        <strong style="color:var(--gold);">15,000字超の徹底解説</strong>をお届けします。
+    </p>
+    <p style="color:rgba(255,255,255,0.5);font-size:13px;margin-bottom:30px;">
+        お子さんの自由研究にも。大人の本気の趣味にも。
+    </p>
+    <a href="https://note.com/pokano_ai" target="_blank" class="cta-button">
+        作り方（完全版）はnoteで &rarr;
+    </a>
+    <p style="color:rgba(255,255,255,0.35);font-size:12px;margin-top:20px;">note.com/pokano_ai で公開中</p>
 </div>
 
 <!-- ============================================ -->
@@ -2196,40 +928,40 @@
     <div style="max-width:800px;">
         <div style="margin-bottom:20px;padding:20px 24px;background:#fff;border-radius:8px;border:1px solid var(--border);border-left:4px solid var(--accent);">
             <h3 style="font-size:17px;color:var(--primary);margin:0 0 10px;padding:0;border:none;">Q. 泥団子はなぜ丸くなるの？</h3>
-            <p style="font-size:14px;margin-bottom:0;">手の圧力と水の表面張力が働き、球は同じ体積で表面積が最小になる形状です。惑星が重力で球体になるのと同じ物理法則（最小エネルギーの原理）が泥団子にも適用されます。球形は応力を均等に分散するため、最も壊れにくい形でもあります。詳しくは<a href="#physics">物理学セクション</a>をご覧ください。</p>
+            <p style="font-size:14px;margin-bottom:0;">手の圧力と水の表面張力が働き、球は同じ体積で表面積が最小になる形状です。惑星が重力で球体になるのと同じ物理法則（ラプラス圧・最小エネルギーの原理）が泥団子にも適用されます。</p>
         </div>
 
         <div style="margin-bottom:20px;padding:20px 24px;background:#fff;border-radius:8px;border:1px solid var(--border);border-left:4px solid var(--accent);">
             <h3 style="font-size:17px;color:var(--primary);margin:0 0 10px;padding:0;border:none;">Q. 泥団子を光らせるにはどうする？</h3>
-            <p style="font-size:14px;margin-bottom:0;">茶こしレベルの超微細な粘土を表面に塗り重ね、手のひら → ビニール袋 → 綿布 → フリースの順で段階的に磨きます。表面の凹凸を可視光の波長（380〜780nm）以下にすることで、宝石研磨と同じ原理（正反射）で光ります。詳しい手順は<a href="#method">光る泥だんごの作り方</a>セクションで解説しています。</p>
+            <p style="font-size:14px;margin-bottom:0;">超微細な粘土粒子で表面を覆い、段階的に磨いて表面粗さを可視光の波長（380〜780nm）以下にします。宝石研磨と同じ「正反射」の原理で光ります。具体的な手順は<a href="https://note.com/pokano_ai" target="_blank" style="color:var(--accent);font-weight:600;">完全版</a>で解説しています。</p>
         </div>
 
         <div style="margin-bottom:20px;padding:20px 24px;background:#fff;border-radius:8px;border:1px solid var(--border);border-left:4px solid var(--accent);">
             <h3 style="font-size:17px;color:var(--primary);margin:0 0 10px;padding:0;border:none;">Q. どんな土が泥団子に向いている？</h3>
-            <p style="font-size:14px;margin-bottom:0;">粘土質の土（握って形が残るもの）が最適です。理想的な配合は粘土20〜35%、シルト30〜40%、細砂20〜30%。校庭の土は砂が多い傾向があるので、山の斜面や川沿いの粘土質の土を探しましょう。簡易判定法として「リボンテスト」（薄く伸ばして3cm以上切れなければOK）があります。詳しくは<a href="#chemistry">化学セクション</a>をご覧ください。</p>
+            <p style="font-size:14px;margin-bottom:0;">粘土質の土（握って形が残るもの）が最適です。理想的な配合は粘土20〜35%、シルト30〜40%、細砂20〜30%。校庭の土は砂が多い傾向があるので、山の斜面や川沿いの粘土質の土がおすすめです。</p>
         </div>
 
         <div style="margin-bottom:20px;padding:20px 24px;background:#fff;border-radius:8px;border:1px solid var(--border);border-left:4px solid var(--accent);">
             <h3 style="font-size:17px;color:var(--primary);margin:0 0 10px;padding:0;border:none;">Q. 泥団子が割れるのはなぜ？</h3>
-            <p style="font-size:14px;margin-bottom:0;">主な原因は乾燥速度の不均一です。表面が先に乾くと収縮差で内部に引っ張り応力が生じ、ひび割れが発生します。直射日光での急速乾燥はNG。ビニール袋で「寝かせ」を挟みながらゆっくり乾燥させることで、均一な収縮を促し割れを防げます。対策の詳細は<a href="#mistakes">失敗と対策</a>セクションにまとめています。</p>
+            <p style="font-size:14px;margin-bottom:0;">乾燥速度の不均一が主な原因です。表面が先に乾くと収縮差で内部に引っ張り応力が生じます。直射日光はNG。ビニール袋で「寝かせ」を挟みながらゆっくり乾燥させましょう。</p>
         </div>
 
         <div style="margin-bottom:20px;padding:20px 24px;background:#fff;border-radius:8px;border:1px solid var(--border);border-left:4px solid var(--accent);">
             <h3 style="font-size:17px;color:var(--primary);margin:0 0 10px;padding:0;border:none;">Q. 光る泥だんごにかかる時間は？</h3>
-            <p style="font-size:14px;margin-bottom:0;">制作自体は3〜4時間、乾燥に1日〜1週間。完全乾燥まで含めると約1週間が目安です。子供向け簡易版なら2〜3時間で楽しめます。本記事の<a href="#kids">5ステップ簡易版</a>も参考にしてください。</p>
+            <p style="font-size:14px;margin-bottom:0;">制作自体は3〜4時間、乾燥に1日〜1週間。完全乾燥まで含めると約1週間が目安です。上の簡易版なら2〜3時間で楽しめます。</p>
         </div>
 
         <div style="margin-bottom:20px;padding:20px 24px;background:#fff;border-radius:8px;border:1px solid var(--border);border-left:4px solid var(--accent);">
             <h3 style="font-size:17px;color:var(--primary);margin:0 0 10px;padding:0;border:none;">Q. 泥団子は自由研究に使える？</h3>
-            <p style="font-size:14px;margin-bottom:0;">泥団子は物理学（表面張力、締固め）、化学（粘土鉱物の結合）、地学（土壌の種類）を一度に学べる、自由研究に最適なテーマです。異なる場所の土で泥団子を作って比較実験をすると、優れたレポートになります。<a href="#kids">自由研究のヒント</a>も参考にしてください。</p>
+            <p style="font-size:14px;margin-bottom:0;">物理学（表面張力）、化学（粘土鉱物の結合）、地学（土壌の種類）を一度に学べる最高のテーマです。異なる場所の土で作り比べると、優れた実験レポートになります。レポートの書き方は<a href="https://note.com/pokano_ai" target="_blank" style="color:var(--accent);font-weight:600;">完全版</a>で解説しています。</p>
         </div>
     </div>
 </div>
 
 <!-- ============================================ -->
-<!-- Related Articles Section - Internal Links -->
+<!-- Related Articles Section -->
 <!-- ============================================ -->
-<div class="section" id="related">
+<div class="section" id="related" style="background:#fff;">
     <h2 class="section-title">関連記事 ── Pokanoの他のAI分析</h2>
     <p class="section-lead">「くだらないことほど本気で」をモットーに、AIの分析能力をフル活用した他の記事もどうぞ。</p>
 
@@ -2254,25 +986,14 @@
 </div>
 
 <!-- ============================================ -->
-<!-- Closing Section -->
+<!-- Footer / Closing -->
 <!-- ============================================ -->
 <div class="section" id="closing" style="background:linear-gradient(135deg, var(--primary) 0%, #1a1040 50%, var(--accent2) 100%);color:#fff;text-align:center;">
-    <h2 style="color:var(--accent);font-size:24px;border:none;margin-bottom:15px;">おわりに ── たかが泥団子、されど泥団子</h2>
-    <p style="color:rgba(255,255,255,0.85);max-width:700px;margin:0 auto 20px;font-size:15px;">
-        物理学の毛細管力から、化学の水素結合、トライボロジーの表面粗さ理論、陶芸のバニシング技法、
-        そして古代エジプトから現代のアフリカまで ── 泥団子ひとつの中に、人類の科学と技術の歴史が凝縮されていた。
-    </p>
-    <p style="color:rgba(255,255,255,0.85);max-width:700px;margin:0 auto 20px;font-size:15px;">
-        「くだらないことを本気でやる」と決めてAIに泥団子を分析させた結果、
-        7つの学問領域と5大陸の技術を横断する壮大な旅になった。
-        この記事を読んだあなたは、もう「ただ泥を丸めている人」ではない。
-        <strong>表面粗さをナノスケールで制御し、粘土鉱物の化学結合を操る、泥団子サイエンティスト</strong>だ。
-    </p>
     <p style="color:rgba(255,255,255,0.6);font-size:14px;margin-bottom:5px;">
         「くだらないことほど、本気で。」
     </p>
     <p style="color:var(--accent);font-size:14px;font-weight:600;margin-bottom:20px;">
-        — Pokano（ただのAI分析オタク）
+        &mdash; Pokano（ただのAI分析オタク）
     </p>
     <p style="color:rgba(255,255,255,0.3);font-size:11px;margin-bottom:20px;">
         本記事はAI（Claude）による分析をベースに作成されました。記載の数値は文献値・理論値に基づく概算であり、実際の結果は土質・環境条件により異なります。<br>
@@ -2324,7 +1045,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Fade-in animation
-    const fadeElements = document.querySelectorAll('.card, .principle-list li, .timeline-item, .step-box, .fun-fact');
+    const fadeElements = document.querySelectorAll('.card, .principle-list li, .step-box, .fun-fact, .toc-list li');
     const fadeObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
